@@ -1,35 +1,53 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import './header.css'
+import { LogoOncoSalud, LogoGuardianes } from "./icons.js";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+// const Header = ({ siteTitle }) => (
+// )
+
+class Header extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      hasScrolled: false
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  handleScroll = (event) => {
+    const scrollTop = window.pageYOffset
+
+    if (scrollTop > 50) {
+      this.setState({ hasScrolled: true })
+    } else {
+      this.setState({ hasScrolled: false })
+    }
+  }
+
+  render() {
+    return(
+      <header className={this.state.hasScrolled ?  'HeaderScroll' : ''}>
+        <div className="HeaderGroup">
+          <div className="HeaderLogos">
+            <img src={require('../images/logo-impulse.png')} />
+            <LogoOncoSalud className="ScreenStatus"/>
+            <div className="Separator" />
+            <LogoGuardianes className="ScreenStatus" />
+          </div>
+          <div className="HeaderButton">
+            <button className="MainButton">Descarga Guía</button>
+          </div>
+        </div>
+      </header>
+    )
+  }
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
