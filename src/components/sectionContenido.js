@@ -1,26 +1,25 @@
 import React from 'react';
-import styled from 'styled-components'
+import { Link } from 'gatsby';
+import './sectionContenido.css'
 
-// Se especifica el estilo de cada etiqueta creada
-const SectionGroup = styled.div``
+class SectionContenido extends React.Component {
+    render() {
+        return (
+            <div className="SectionGroup">
+                <div className="SectionContainer">
+                    <h2>Tabla de contenidos</h2>
+                    <div className="SectionContent">
+                        <a className="SectionLink">1. ¿Cómo identifico mi color de piel?</a>
+                        <a className="SectionLink">2.¿A qué hora me afecta más el sol?</a>
+                        <a className="SectionLink">3.¿Cómo me protejo del sol?</a>
+                        <a className="SectionLink">4.¿Qué es el cáncer de piel?</a>
+                        <a className="SectionLink">5.¿Cómo se trata el cáncer de piel?</a>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+}
 
-const SectionTitle = styled.h2``
-
-const SectionInfo = styled.div``
-
-const SectionNumber = styled.p``
-
-const SectionData = styled.p``
-
-const sectionContenido = props => (
-    <SectionGroup>
-        <SectionTitle></SectionTitle>
-        <SectionInfo>
-            <SectionNumber></SectionNumber>
-            <SectionData></SectionData>
-        </SectionInfo>
-    </SectionGroup>
-)
-
-export default sectionContenido
+export default SectionContenido
 

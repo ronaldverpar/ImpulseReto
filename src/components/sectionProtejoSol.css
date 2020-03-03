@@ -1,0 +1,19 @@
+.ProtejoSol {
+    height: 1012px;
+    background-color: #D6F1F6;
+}
+
+.ProtejoSolContainer {
+    padding-top: 100px;
+}
+
+.ProtejoSolHeader {
+    padding: 0 17%;
+    padding-bottom: 52px;
+}
+
+.ProtejoSolBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
