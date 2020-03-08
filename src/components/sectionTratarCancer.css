@@ -1,0 +1,42 @@
+.TratarCancer {
+    margin-top: 100px;
+}
+
+.TratarCancerContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 100px 10%;
+}
+
+.TratarCancerItems {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.TratarCancerText {
+    padding: 0 85px;
+    align-self: center;
+}
+
+.TratarCancerText h4 {
+    color: #056082;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.TratarCancerText p {
+    color: #737373;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.TratarCancerImages {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    border-radius: 24px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
