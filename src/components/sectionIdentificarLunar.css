@@ -25,13 +25,15 @@
 
 .IdentificarLunarImage {
     height: 390px;
-    width: 380px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
 }
 
 .IdentificarLunarImage img {
     height: 100%;
-    width: 100%;
-    justify-self: end;
+    width: 380px;
     background-size: cover;
     background-position: bottom;
 }

@@ -46,36 +46,16 @@ header {
     padding-right: 70px;
 }
 
-/* Cuando se realizar scroll los estilos son cambiados */
-@media (min-width: 520px) {
-    .HeaderScroll .HeaderGroup {
-        height: 100px;
-    }
-    
-    .HeaderScroll .HeaderLogos{
-        margin-left: 80px;
-        grid-template-columns: 150px 60px 100px;
-        align-items: center;
-        justify-items: center;
-    }
-    
-    .HeaderScroll .HeaderGroup img {
-        display: none;
-    }
-    
-    .HeaderScroll .ScreenStatus {
-        display: inline;
-    }
-    
-    .HeaderScroll .Separator {
-        display: inline;
-    }
-}
-
 /* si el tamanio de la pantalla es más pequenia cambiar estilo */
 .HeaderScroll {
     background: rgba(255, 255, 255, .8);
     backdrop-filter: blur(20px);
+}
+
+@media (max-width: 712px) {
+    .HeaderButton {
+        display: none;
+    }
 }
 
 @media (max-width: 620px) {
@@ -86,6 +66,7 @@ header {
         margin-top: 8px;
         grid-template-columns: 1fr 2fr;
     }
+
     .HeaderGroup img {
         width: 60px;
         margin-left: 30px;
@@ -105,8 +86,32 @@ header {
     }
 }
 
-@media (max-width: 712px) {
-    .HeaderButton {
+/* Cuando se realizar scroll los estilos son cambiados */
+@media (min-width: 520px) {
+    .HeaderScroll .HeaderGroup {
+        height: 100px;
+    }
+
+    .HeaderScroll {
+        height: 110px;
+    }
+    
+    .HeaderScroll .HeaderLogos{
+        margin-left: 80px;
+        grid-template-columns: 150px 60px 100px;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .HeaderScroll .HeaderGroup img {
         display: none;
+    }
+    
+    .HeaderScroll .ScreenStatus {
+        display: inline;
+    }
+    
+    .HeaderScroll .Separator {
+        display: inline;
     }
 }
