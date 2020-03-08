@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import SectionContenido from "../components/sectionContenido"
 import SectionTipoPiel from "../components/sectionTipoPiel"
 import SectionProtejoSol from "../components/sectionProtejoSol"
+import SectionIdentificarLunar from "../components/sectionIdentificarLunar"
 
 const IndexPage = () => (
   <Layout>
@@ -31,6 +32,7 @@ const IndexPage = () => (
     <SectionContenido />
     <SectionTipoPiel />
     <SectionProtejoSol />
+    <SectionIdentificarLunar />
   </Layout>
 )
 

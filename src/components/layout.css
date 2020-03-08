@@ -79,7 +79,7 @@ body {
 
 /* Estilo de la sección: Como identifico mi tipo de piel? */
 .TipoPielHeader {
-  width: 643px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -109,6 +109,10 @@ body {
 
 /* si el tamanio de la pantalla es más pequenia cambiar estilo */
 @media (max-width: 620px) {
+  .SectionTitle {
+    font-size: 32px;
+  }
+  
   .Hero {
     background: url('../images/home-photo-small.png');
     background-size: cover;
@@ -140,6 +144,11 @@ body {
     padding: 14px 58px;
     font-size: 14px;
     display: block;
+    margin: 0 auto;
+  }
+
+  .TipoPielHeader {
+    width: 100%;
     margin: 0 auto;
   }
 }

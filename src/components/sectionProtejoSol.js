@@ -9,9 +9,9 @@ class SectionProtejoSol extends React.Component {
                 <div className="ProtejoSolContainer">
                     <div className="ProtejoSolHeader">
                         <h2 className="SectionTitle">¿Cómo me <a>protejo</a> del sol?</h2>
-                        <p className="SectionInfo">Los rayos UV traspasan el agua, las ventanas y la ropa. Afortunadamente son muchas las formas que tenemos de protegernos de los riesgos de cáncer de piel.</p>
+                        <p className="ProtejoSolInfo SectionInfo">Los rayos UV traspasan el agua, las ventanas y la ropa. Afortunadamente son muchas las formas que tenemos de protegernos de los riesgos de cáncer de piel.</p>
                     </div>
-                    <div className="ProtejoSolBody">
+                    {/* <div className="ProtejoSolBody">
                         <Card 
                             image={require('../images/sweater.png')}
                             title="Ropa especial"
@@ -27,6 +27,10 @@ class SectionProtejoSol extends React.Component {
                             title="Lentes de sol"
                             text="No escatimes en su calidad, invierte lo necesario en la protección de tus ojos y la piel de tus párpados. Debes protegerlos al 100% de los rayos UVA y UVB."
                         />
+                    </div> */}
+                    <div className="ProtejoSolFooter">
+                        <p className="ProtejoSolInfo SectionInfo">¿Qué otras medidas puedes tomar para cuidarte? Si quieres reducir tu exposición al sol y prevenir el cáncer de piel, visita nuestro blog.</p>
+                        <button className="MainButton">Ir al blog</button>
                     </div>
                 </div>
             </div>

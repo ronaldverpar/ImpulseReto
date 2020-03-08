@@ -1,0 +1,72 @@
+.IdentificarLunar {
+    width: 100%;
+    background-color: #F2D5CE;
+}
+
+.IdentificarLunarContent {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.IdentificarLunarInfo {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10.78%;
+}
+
+.IdentificarLunarInfo button {
+    align-self: center;
+}
+
+.IdentificarLunarImage {
+    height: 390px;
+    width: 380px;
+}
+
+.IdentificarLunarImage img {
+    height: 100%;
+    width: 100%;
+    justify-self: end;
+    background-size: cover;
+    background-position: bottom;
+}
+
+@media (max-width: 880px) {
+    .IdentificarLunarInfo {
+        padding: 0 3%;
+    }
+}
+
+@media (max-width: 798px) {
+    .IdentificarLunarContent {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 37px;
+        background-color: #F4E1DC;
+    }
+
+    .IdentificarLunarImage {
+        background-color: #F2D5CE;
+        order: 1;
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .IdentificarLunarImage img {
+        height: auto;
+        width: 167px;
+        background-size: cover;
+        justify-self: end;
+    }
+
+    .IdentificarLunarInfo {
+        order: 2;
+    }
+}

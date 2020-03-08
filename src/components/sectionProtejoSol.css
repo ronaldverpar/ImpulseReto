@@ -17,3 +17,15 @@
     flex-direction: row;
     justify-content: center;
 }
+
+.ProtejoSolFooter {
+    padding: 0 15%;
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.ProtejoSolInfo {
+    color: #056082;
+}

@@ -1,35 +1,89 @@
 .SectionGroup {
     background: #72A6C0;
-    height: 567px;
 }
 
 .SectionContainer {
-    padding-top: 100px;
+    padding: 100px 30%;
+    display: grid;
+    grid-template-rows: 60px 1fr;
 }
 
 .SectionContainer h2 {
     text-align: center;
     color: white;
     font-size: 40px;
+    margin: 0;
 }
 
 .SectionContent {
-    width: 447px;
+    padding-top: 25px;
+    width: 100%;
     height: 280px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.SectionItems {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.SectionLink {
+/* Estilos para cada sección de la lista de contenido */
+
+.SectionItem {
     color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.SectionItem a:nth-child(1) {
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.SectionLink {
     font-size: 24px;
     font-weight: 500;
     text-decoration: none;
+    line-height: 1.5;
+    padding-left: 13px;
 }
 
 .ActiveLink {
     font-weight: 600;
     color: #056082;
+}
+
+/* Se modifica el padding del contenido para mantener el contenido centrado */
+
+@media (max-width: 1052px) {
+    .SectionContainer {
+        padding: 100px 10%;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .SectionContainer {
+        padding: 100px 5%;
+    }
+
+    .SectionContainer h2 {
+        font-size: 32px;
+    }
+
+    .SectionLink {
+        font-size: 18px;
+    }
+
+    .ActiveLink {
+        font-size: 18px;
+    }
+
+    .SectionItem a:nth-child(1) {
+        font-weight: 700;
+        font-size: 34px;
+    }
 }
