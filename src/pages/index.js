@@ -4,6 +4,10 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+
+import scrollTo from 'gatsby-plugin-smoothscroll';
+import '../components/sectionContenido.css'
+
 import SectionContenido from "../components/sectionContenido"
 import SectionTipoPiel from "../components/sectionTipoPiel"
 import SectionProtejoSol from "../components/sectionProtejoSol"
@@ -30,10 +34,14 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <SectionContenido />
+    <SectionContenido/>
+    <div id="tipo_piel" />
     <SectionTipoPiel />
+    <div id="protejo_sol" />
     <SectionProtejoSol />
+    <div id="identificar_lunar" />
     <SectionIdentificarLunar />
+    <div id="tratar_cancer" />
     <SectionTratarCancer />
   </Layout>
 )

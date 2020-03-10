@@ -1,10 +1,9 @@
 .ProtejoSol {
-    height: 1012px;
     background-color: #D6F1F6;
 }
 
 .ProtejoSolContainer {
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .ProtejoSolHeader {
