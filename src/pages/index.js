@@ -39,7 +39,7 @@ const IndexPage = () => (
     <SectionTipoPiel />
     <div id="protejo_sol" />
     <SectionProtejoSol />
-    <div id="identificar_lunar" />
+    <div id="identificar_lunar" style={{ width: "100%", height: "100px", backgroundColor: "#D6F1F6" }} />
     <SectionIdentificarLunar />
     <div id="tratar_cancer" />
     <SectionTratarCancer />
