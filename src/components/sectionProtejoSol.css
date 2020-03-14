@@ -13,8 +13,13 @@
 
 .ProtejoSolBody {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+}
+
+.ProtejoSolCarousel {
+    width: 100%;
+    margin: 0;
 }
 
 .ProtejoSolFooter {
@@ -27,4 +32,30 @@
 
 .ProtejoSolInfo {
     color: #056082;
+}
+
+/* Estilo de los contenidos */
+.ProtejoSolScroll {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+}
+
+.ProtejoSolScrollIndicator {
+    display: none;
+}
+
+@media(max-width: 620px) {
+    .ProtejoSolScroll {
+        grid-template-columns: 70px 1fr 70px;
+    }
+    .ProtejoSolScrollIndicator {
+        display: block;
+        width: 100%;
+        height: 50px;
+    }
+    .ProtejoSolFooter {
+        margin-top: 20px;
+    }
 }

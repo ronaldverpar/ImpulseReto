@@ -1,6 +1,3 @@
-.TipoPiel {
-    height: 792px;
-}
 
 .TipoPielHeader {
     width: 643px;
@@ -9,12 +6,16 @@
 }
 
 .TipoPielBody {
-    margin: 50px 100px;
+    margin: 50px 100px 0 100px;
 }
 
 .TipoPielContainer {
     width: 100%;
-    height: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 /* Se disenia el estilo de los rostros cuando son seleccionados */
@@ -37,8 +38,7 @@
 
 .TipoPielBoxFace img {
     height: 165px;
-    width: 100%;
-    
+    width: 100%;  
 }
 
 .TipoPielBoxTitle h4 {
@@ -61,6 +61,18 @@
 .TipoPielBoxInfo p {
     color: #737373;
     font-weight: 500;
+}
+
+/* Estilo del tipo de piel cuando no esta seleccionado */
+.TipoPielBoxSmall {
+    overflow: hidden;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.TipoPielBoxSmall img {
+    opacity: 50%;
 }
 
 /* Color de los diferentes boxes */

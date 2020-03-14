@@ -4,12 +4,13 @@
     border-radius: 24px;
     background-color: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    margin: 0 8px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .CardContainer {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 180px 40px 1fr;
     margin: 30px;
 }
 

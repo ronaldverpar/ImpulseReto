@@ -1,11 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-import scrollTo from 'gatsby-plugin-smoothscroll';
 import '../components/sectionContenido.css'
 
 import SectionContenido from "../components/sectionContenido"
@@ -35,11 +33,11 @@ const IndexPage = () => (
       </div>
     </div>
     <SectionContenido/>
-    <div id="tipo_piel" />
+    <div id="tipo_piel" className="ContenidoSeparador" style={{ backgroundColor: "#72A6C0" }} />
     <SectionTipoPiel />
-    <div id="protejo_sol" />
+    <div id="protejo_sol" className="ContenidoSeparador" style={{ backgroundColor: "#FFFFFF"}} />
     <SectionProtejoSol />
-    <div id="identificar_lunar" style={{ width: "100%", height: "100px", backgroundColor: "#D6F1F6" }} />
+    <div id="identificar_lunar" className="ContenidoSeparador" style={{ backgroundColor: "#D6F1F6" }} />
     <SectionIdentificarLunar />
     <div id="tratar_cancer" />
     <SectionTratarCancer />

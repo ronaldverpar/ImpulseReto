@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './card'
 import './sectionProtejoSol.css'
+import ProtejoSolCarousel from './ProtejoSolCarousel'
 
 class SectionProtejoSol extends React.Component {
     render () {
@@ -12,11 +13,30 @@ class SectionProtejoSol extends React.Component {
                         <p className="ProtejoSolInfo SectionInfo">Los rayos UV traspasan el agua, las ventanas y la ropa. Afortunadamente son muchas las formas que tenemos de protegernos de los riesgos de cáncer de piel.</p>
                     </div>
                     <div className="ProtejoSolBody">
-                        <Card 
+                    <div className="ProtejoSolCarousel">
+                        <ProtejoSolCarousel />
+                    </div>
+                        {/* <div className="ProtejoSolScroll">
+                            <div className="ProtejoSolArrow">
+
+                            </div>
+                            <div className="ProtejoSolContent">
+                                <Card 
+                                    image={require('../images/sweater.png')}
+                                    title="Ropa especial"
+                                    text="Tienen un factor de protección a la radiación ultravioleta (UPF). Si la etiqueta indica 1800 UPF significa que solo permite que 1/1800 de rayos ultravioleta lleguen a la piel."
+                                />
+                            </div>
+                            <div className="ProtejoSolArrow">
+
+                            </div>
+                        </div>
+                        <div className="ProtejoSolScrollIndicator"></div> */}
+                        {/* <Card 
                             image={require('../images/sweater.png')}
                             title="Ropa especial"
                             text="Tienen un factor de protección a la radiación ultravioleta (UPF). Si la etiqueta indica 1800 UPF significa que solo permite que 1/1800 de rayos ultravioleta lleguen a la piel."
-                        />
+                        /> */}
                         {/* <Card 
                             image={require('../images/jeans.png')}
                             title="Ropa adecuada"

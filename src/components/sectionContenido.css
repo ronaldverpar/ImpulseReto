@@ -3,7 +3,7 @@
 }
 
 .SectionContainer {
-    padding: 100px 30%;
+    padding: 100px 30% 0 30%;
     display: grid;
     grid-template-rows: 60px 1fr;
 }
@@ -43,9 +43,10 @@
     cursor: pointer;
 }
 
-.SectionItem a:nth-child(1) {
+.SectionItem p:nth-child(1) {
     font-weight: 700;
     font-size: 34px;
+    margin: 0;
 }
 
 .SectionLink {
@@ -54,6 +55,7 @@
     text-decoration: none;
     line-height: 1.5;
     padding-left: 13px;
+    margin: 0;
 }
 
 .ActiveLink {
