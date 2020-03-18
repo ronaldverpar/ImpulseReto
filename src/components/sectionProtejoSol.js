@@ -13,7 +13,7 @@ class SectionProtejoSol extends React.Component {
                         <p className="ProtejoSolInfo SectionInfo">Los rayos UV traspasan el agua, las ventanas y la ropa. Afortunadamente son muchas las formas que tenemos de protegernos de los riesgos de cáncer de piel.</p>
                     </div>
                     <div className="ProtejoSolBody">
-                    <div className="ProtejoSolCarousel">
+                    <div className="ProtejoSolItems">
                         <ProtejoSolCarousel />
                     </div>
                         {/* <div className="ProtejoSolScroll">

@@ -33,13 +33,11 @@ class SectionContenido extends React.Component {
                             <Link id="link_tipo_piel" to="/#tipo_piel">
                                 <div id="element_tipo_piel" className={ this.state.isBoxVisible ? 'SectionItem ActiveLink' : 'SectionItem'}>
                                     <p>1.</p><p className="SectionLink">¿Cómo identifico mi color de piel?</p>
-                                    {/* <a>1.</a><a className="SectionLink">¿Cómo identifico mi color de piel?</a> */}
                                 </div>
                             </Link>
                             <Link id="link_protejo_sol" to="/#protejo_sol">
                                 <div className="SectionItem">
                                     <p>2.</p><p className="SectionLink">¿A qué hora me afecta más el sol?</p>
-                                    {/* <a>2.</a><a className="SectionLink">¿A qué hora me afecta más el sol?</a> */}
                                 </div>
                             </Link>
                             <Link id="link_protejo_sol" to="/#protejo_sol">

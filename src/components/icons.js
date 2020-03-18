@@ -762,4 +762,19 @@ export function LogoGuardianes(props) {
       </svg>
     )
   }
+
+  function ArrowLeft(props) {
+    return (
+      <svg width={19.583} height={47.908} viewBox="0 0 19.583 47.908" {...props}>
+        <path
+          data-name="Path 8737"
+          d="M16.121 44.446l-13.15-20 13.15-21"
+          fill="none"
+          stroke="#f08d24"
+          strokeLinecap="round"
+          strokeWidth={5}
+        />
+      </svg>
+    )
+  }
   

@@ -1,5 +1,6 @@
 import React from 'react'
 import './sectionTipoPiel.css'
+import ItemsTipoPiel from './itemsTipoPiel'
 
 class SectionTipoPiel extends React.Component {
 
@@ -22,7 +23,8 @@ class SectionTipoPiel extends React.Component {
                 </div>
                 <div className="TipoPielBody">
                     <div className="TipoPielContainer">
-                        {this.state.statusFace1 ? 
+                        <ItemsTipoPiel />
+                        {/* {this.state.statusFace1 ? 
                             (<div className="TipoPielBoxSmall">
                                 <div className="TipoPielBoxColor Face1" />
                                 <div className="TipoPielBoxFace">
@@ -153,7 +155,7 @@ class SectionTipoPiel extends React.Component {
                                     <p>A veces se quema, a veces se broncea. También tiene riesgo de cáncer de piel. Usar un FPS mínimo de 15.</p>
                                 </div>
                             </div>
-                        )}
+                        )} */}
                     </div>
                 </div>
             </div>

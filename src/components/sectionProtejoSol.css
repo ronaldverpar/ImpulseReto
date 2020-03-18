@@ -17,9 +17,8 @@
     justify-content: center;
 }
 
-.ProtejoSolCarousel {
-    width: 100%;
-    margin: 0;
+.ProtejoSolItems {
+    margin: 0 7%;
 }
 
 .ProtejoSolFooter {
@@ -57,5 +56,9 @@
     }
     .ProtejoSolFooter {
         margin-top: 20px;
+    }
+
+    .ProtejoSolItems {
+        margin: 0;
     }
 }
