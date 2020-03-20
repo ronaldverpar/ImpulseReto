@@ -1,49 +1,20 @@
 import React from 'react'
-import CardTipoPiel from './cardTipoPiel';
-import Slider from 'infinite-react-carousel';
+import './cardTipoPielCarousel.css'
 
-export default class CardTipoPielCarousel extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            typeSizeScreen: "Small"
-        }
-    }
+const CardTipoPielCarousel = props => (
+    <div className={props.activeCardTipoPiel ? "TipoPielCarouselBox" : "TipoPielCarouselBoxSmall"}>
+        <div className="TipoPielCarouselBoxColor" style={props.styleface} />
+        <div className="TipoPielCarouselBoxFace">
+            <img src={props.image} />
+        </div>
+        <div className={props.activeCardTipoPiel ? "TipoPielCarouselBoxInfo" : "TipoPielCarouselBoxInactive"}>
+            <div className="TipoPielCarouselBoxTitle">
+                <h4>{props.title}</h4>
+                <h5>{props.subtitle}</h5>
+            </div>
+            <p>{props.info}</p>
+        </div>
+    </div>
+)
 
-    componentDidMount() {
-        window.addEventListener("resize", this.modifySettings);
-    }
-
-    modifySettings = (event) => {
-        const screensize = window.innerWidth
-        if (screensize < 820 && screensize > 400) {
-            this.setState({ typeSizeScreen: "Small" })
-        }
-         else if (screensize < 400) {
-            this.setState({ typeSizeScreen: "VerySmall" })
-        }
-    }
-
-    render() {
-        //Cuando el tamanio de la pantalla es menor 680px
-        const settings =  {
-            arrows: false,
-            centerMode: true,
-            dots: true,
-            initialSlide: true,
-            centerPadding: 80,
-        };
-        //Cuando el tamanio de la pantalla es menor a 400px
-        const settingsSmall =  {
-            arrows: false,
-            centerMode: true,
-            dots: true,
-            initialSlide: true,
-            centerPadding: 20,
-        };
-
-        return (
-            
-        )
-    }
-}
+export default CardTipoPielCarousel
