@@ -7,7 +7,6 @@ export default class ProtejoSolCarousel extends React.Component {
     constructor(props) {
         super(props)
 
-        //Catalogar el tipo de pantalla para poder adaptar el carousel 
         this.state = {
             hasSizeChange: false
         }

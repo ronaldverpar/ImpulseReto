@@ -21,6 +21,14 @@
     justify-content: center;
 }
 
+.TipoPielCards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 /* Se disenia el estilo de los rostros cuando son seleccionados */
 .TipoPielBox {
     overflow: hidden;

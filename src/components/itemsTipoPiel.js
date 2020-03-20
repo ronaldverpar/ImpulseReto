@@ -4,6 +4,14 @@ import CardTipoPiel from './cardTipoPiel';
 import './itemsTipoPiel.css'
 
 export default class ItemsTipoPiel extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+        hasSizeChange: false
+    }
+  }
+
   render() {
     const settings =  {
         adaptiveHeight: true,
