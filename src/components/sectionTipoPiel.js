@@ -13,16 +13,6 @@ class SectionTipoPiel extends React.Component {
         this.state = {
             typeSizeScreen: "Normal"
         }
-
-        const module = typeof window !== `undefined` ? require("module") : null
-    }
-
-    componentDidMount() {
-        window.addEventListener("resize", this.modifySettings.bind(this));
-        this.modifySettings();
-    }
-    UNSAFE_componentWillMount() {
-        window.removeEventListener("resize", this.modifySettings.bind(this));
     }
 
     modifySettings = (event) => {
@@ -33,6 +23,15 @@ class SectionTipoPiel extends React.Component {
          else {
             this.setState({ typeSizeScreen: "VerySmall" })
         }
+    }
+
+    componentDidMount() {
+        const module = typeof window !== `undefined` ? require("module") : null
+        window.addEventListener("resize", this.modifySettings.bind(this));
+        this.modifySettings();
+    }
+    UNSAFE_componentWillMount() {
+        window.removeEventListener("resize", this.modifySettings.bind(this));
     }
 
     render () {
