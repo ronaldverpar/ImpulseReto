@@ -11,10 +11,6 @@
     flex-direction: column;
 }
 
-.TipoPielBoxSmall img {
-    opacity: 50%;
-}
-
 .TipoPielBoxInactive {
     display: none;
 }

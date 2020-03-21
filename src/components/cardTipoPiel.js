@@ -25,12 +25,13 @@ export default class CardTipoPiel extends React.Component {
         let classBoxColor = this.state.active ? 'TipoPielBoxColorSelected' : 'TipoPielBoxColor'
         let classNameInfo = this.state.active ? 'TipoPielBoxInfo' : 'TipoPielBoxInactive'
         let classPielBoxFace = this.state.active ? 'TipoPielBoxFaceActive' : 'TipoPielBoxFace'
+        let styleImage = this.state.active ? { opacity: "100%" } : { opacity: "50%" }
 
         return (
             <div onClick={this.toggleClass.bind(this)} className={className}>
                 <div className={classBoxColor} style={this.props.styleface}>
                     <div className={classPielBoxFace}>
-                        <img src={this.props.image} style={{ opacity: "50%" }} />
+                        <img src={this.props.image} style={ styleImage} />
                         <div className={!this.state.active ? "TipoPielMarco" : "TipoPielMarcoInactive"} style={this.props.styleface}/>
                     </div>
                     <div className={classNameInfo}>
