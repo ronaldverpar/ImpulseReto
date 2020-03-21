@@ -44,4 +44,5 @@ Se creo la pagina web de acuerdo al reto solicitado
 ## Como ejecutarlo?
 1. Primero en el equipo se debe instalar [GatsbyJS](https://www.gatsbyjs.org/docs/quick-start/)
 2. Mediante Consola acceder a la carpeta del proyecto
-3. Ejecutar el proyecto con el comando **gatsby develop**
+3. Ejecutar el proyecto con el comando 
+```gatsby develop```
