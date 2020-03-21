@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, navigate } from 'gatsby';
+import { Link } from 'gatsby';
 import './sectionContenido.css'
 
 class SectionContenido extends React.Component {
@@ -12,7 +12,7 @@ class SectionContenido extends React.Component {
         };
     }
     
-    UNSAFE_componentWillMount() {
+    componentDidMount() {
         window.addEventListener('checkList', this.isList)
     }
 
