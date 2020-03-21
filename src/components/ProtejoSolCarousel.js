@@ -22,7 +22,6 @@ export default class ProtejoSolCarousel extends React.Component {
     }
 
     componentDidMount() {
-        const module = typeof window !== `undefined` ? require("module") : null
         window.addEventListener("resize", this.resizeItem);
     }
 

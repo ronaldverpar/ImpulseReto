@@ -26,7 +26,6 @@ class SectionTipoPiel extends React.Component {
     }
 
     componentDidMount() {
-        const module = typeof window !== `undefined` ? require("module") : null
         window.addEventListener("resize", this.modifySettings.bind(this));
         this.modifySettings();
     }
