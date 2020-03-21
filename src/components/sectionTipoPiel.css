@@ -82,10 +82,6 @@
     flex-direction: column;
 }
 
-.TipoPielBoxSmall img {
-    opacity: 50%;
-}
-
 /* Modificacion de los estilos de acuerdo al tamanio de la pantalla */
 @media (max-width: 720px) {
     .TipoPielHeader {
