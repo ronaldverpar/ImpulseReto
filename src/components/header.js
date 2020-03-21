@@ -14,11 +14,15 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', this.handleScroll)
+    }
   }
 
   UNSAFE_componentWillMount() {
-    window.removeEventListener('scroll', this.handleScroll)
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('scroll', this.handleScroll)
+    }
   }
 
   handleScroll = (event) => {
