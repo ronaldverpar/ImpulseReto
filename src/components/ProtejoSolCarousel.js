@@ -22,11 +22,15 @@ export default class ProtejoSolCarousel extends React.Component {
     }
 
     componentDidMount() {
-        window.addEventListener("resize", this.resizeItem);
+        if (typeof window !== 'undefined') {
+            window.addEventListener("resize", this.resizeItem);
+        }
     }
 
     UNSAFE_componentWillMount() {
-        window.removeEventListener("resize", this.resizeItem);
+        if (typeof window !== 'undefined') {
+            window.removeEventListener("resize", this.resizeItem);
+        }
     }
 
   render() {
