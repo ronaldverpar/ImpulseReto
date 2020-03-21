@@ -16,7 +16,6 @@ header {
 
 .HeaderLogos {
     display: grid;
-    /* grid-template-columns: 200px 150px 60px 100px; */
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: left;

@@ -4,9 +4,6 @@ import React from "react"
 import './header.css'
 import { LogoOncoSalud, LogoGuardianes } from "./icons.js";
 
-// const Header = ({ siteTitle }) => (
-// )
-
 class Header extends React.Component {
   constructor(props) {
     super(props)
