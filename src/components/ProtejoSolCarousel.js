@@ -14,9 +14,10 @@ export default class ProtejoSolCarousel extends React.Component {
 
     componentDidMount() {
         window.addEventListener("resize", this.resizeItem);
+    }
 
-        this.resizeItem() 
-
+    UNSAFE_componentWillMount() {
+        this.resizeItem()
     }
 
     resizeItem = (event) => {
@@ -54,15 +55,6 @@ export default class ProtejoSolCarousel extends React.Component {
         centerPadding: 60,
         slidesToShow: 3
       };
- 
-    // const settingsMedium =  {
-    //     adaptiveHeight: true,
-    //     arrowsScroll: 2,
-    //     centerMode: true,
-    //     dots: true,
-    //     dotsScroll: 2,
-    //     slidesToShow: 2
-    //   };
     
     const settingsSmall =  {
         adaptiveHeight: true,
@@ -73,6 +65,7 @@ export default class ProtejoSolCarousel extends React.Component {
         initialSlide: 1,
         centerPadding: 0
       };
+
     return (
       <div style={{ alignItems: "center"}}>
         {this.state.hasSizeChange ? (
@@ -100,7 +93,6 @@ export default class ProtejoSolCarousel extends React.Component {
                 ))}
             </Slider>
         )}
-        
       </div>
     );
   }
