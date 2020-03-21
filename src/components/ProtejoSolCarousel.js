@@ -12,14 +12,6 @@ export default class ProtejoSolCarousel extends React.Component {
         }
     }
 
-    componentDidMount() {
-        window.addEventListener("resize", this.resizeItem);
-    }
-
-    UNSAFE_componentWillMount() {
-        this.resizeItem()
-    }
-
     resizeItem = (event) => {
         const screensize = window.innerWidth
         if (screensize < 820) {
@@ -27,6 +19,14 @@ export default class ProtejoSolCarousel extends React.Component {
         } else {
             this.setState({ hasSizeChange: false })
         }
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", this.resizeItem);
+    }
+
+    UNSAFE_componentWillMount() {
+        window.removeEventListener("resize", this.resizeItem);
     }
 
   render() {

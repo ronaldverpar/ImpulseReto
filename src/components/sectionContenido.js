@@ -12,16 +12,16 @@ class SectionContenido extends React.Component {
         };
     }
     
-    componentDidMount() {
-        window.addEventListener('checkList', this.isList)
-    }
-
-    isList = (event) => {
-        const pageView = window.location.hash
-        if (pageView === "#tipo_piel") {
-            this.setState({ isBoxVisible: true })
-        }
-    }
+    // componentDidMount() {
+    //     window.addEventListener('onclick', this.isList.bind(this))
+    // }
+    //Cuando la pagina se encuentre en la sección "Como Identificas Mi Tipo De Piel" se debe cambiar de color
+    // isList = (event) => {
+    //     const pageView = window.location.hash
+    //     if (pageView === "#tipo_piel") {
+    //         this.setState({ isBoxVisible: true })
+    //     }
+    // }
 
     render() {
         return (
@@ -31,7 +31,7 @@ class SectionContenido extends React.Component {
                     <div className="SectionContent">
                         <div className="SectionItems">
                             <Link id="link_tipo_piel" to="/#tipo_piel">
-                                <div id="element_tipo_piel" className={ this.state.isBoxVisible ? 'SectionItem ActiveLink' : 'SectionItem'}>
+                                <div id="element_tipo_piel" className='SectionItem ActiveLink'>
                                     <p>1.</p><p className="SectionLink">¿Cómo identifico mi color de piel?</p>
                                 </div>
                             </Link>

@@ -16,9 +16,11 @@ class SectionTipoPiel extends React.Component {
     }
 
     componentDidMount() {
-        window.addEventListener("resizeFace", this.modifySettings);
-
-        this.modifySettings()
+        window.addEventListener("resize", this.modifySettings.bind(this));
+        this.modifySettings();
+    }
+    UNSAFE_componentWillMount() {
+        window.removeEventListener("resize", this.modifySettings.bind(this));
     }
 
     modifySettings = (event) => {
