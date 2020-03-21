@@ -11,11 +11,7 @@ export default class ProtejoSolCarousel extends React.Component {
             hasSizeChange: false
         }
 
-        const module = require("module") 
-        // Solución a la hora de renderizar
-        if (typeof window !== `undefined`) {
-            const module = require("module")
-        }
+        const module = typeof window !== `undefined` ? require("module") : null
     }
 
     resizeItem = (event) => {

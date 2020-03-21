@@ -14,11 +14,7 @@ class SectionTipoPiel extends React.Component {
             typeSizeScreen: "Normal"
         }
 
-        const module = require("module") 
-        // Solución a la hora de renderizar
-        if (typeof window !== `undefined`) {
-            const module = require("module")
-        }
+        const module = typeof window !== `undefined` ? require("module") : null
     }
 
     componentDidMount() {
