@@ -1,65 +1,64 @@
 .Card {
-    height: 434px;
-    max-width: 324px;
-    border-radius: 24px;
-    background-color: white;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    margin: 0 auto;
-    position: relative;
+  height: 434px;
+  max-width: 324px;
+  border-radius: 24px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 0 auto;
+  position: relative;
 }
 
 .CardContainer {
-    display: grid;
-    grid-template-rows: 180px 40px 1fr;
-    margin: 30px;
-    position: relative;
-    padding-top: 30px;
+  display: grid;
+  grid-template-rows: 180px 40px 1fr;
+  margin: 30px;
+  position: relative;
+  padding-top: 30px;
 }
 
 .Card img {
-    height: 180px;
-    width: 180px;
-    margin: 0 auto;
+  height: 180px;
+  width: 180px;
+  margin: 0 auto;
 }
 
 .Card h4 {
-    font-size: 16px;
-    color: #056082;
-    font-weight: 700;
-    text-align: center;
+  font-size: 16px;
+  color: #056082;
+  font-weight: 700;
+  text-align: center;
 }
 
 .Card p {
-    font-size: 16px;
-    color: #737373;
-    font-weight: 500;
-    text-align: center;
+  font-size: 16px;
+  color: #737373;
+  font-weight: 500;
+  text-align: center;
 }
 
-.carousel-track{
-    height: 474px;
+.carousel-track {
+  height: 474px;
 }
 
 .carousel-prev:before {
-    background-image: url('../images/left_arrow.svg');
-    height: 40px;
+  background-image: url("../images/left_arrow.svg");
+  height: 40px;
 }
 .carousel-next:before {
-    background-image: url('../images/right-arrow.svg');
-    height: 40px;
+  background-image: url("../images/right-arrow.svg");
+  height: 40px;
 }
 
-@media(max-width: 680px) {
-    .Card {
-        width: 270px;
-        display: flex;
-        margin-bottom: 10px;
-    }
+@media (max-width: 680px) {
+  .Card {
+    width: 270px;
+    display: flex;
+    margin-bottom: 10px;
+  }
 }
 
-@media(max-width: 820px) {
-    .Card {
-        margin: 0 auto;
-    }
+@media (max-width: 820px) {
+  .Card {
+    margin: 0 auto;
+  }
 }
-

@@ -1,96 +1,95 @@
 .SectionGroup {
-    background: #72A6C0;
+  background: #72a6c0;
 }
 
 .SectionContainer {
-    padding: 100px 30% 0 30%;
-    display: grid;
-    grid-template-rows: 60px 1fr;
+  padding: 20px 30% 0 30%;
+  display: grid;
+  grid-template-rows: 60px 1fr;
 }
 
 .SectionContainer h2 {
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin: 0;
 }
 
 .SectionContent {
-    padding-top: 25px;
-    width: 100%;
-    height: 280px;
-    display: flex;
-    justify-content: center;
+  padding-top: 25px;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: center;
 }
 
 .SectionItems {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .SectionItems a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Estilos para cada sección de la lista de contenido */
 
 .SectionItem {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    cursor: pointer;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  cursor: pointer;
 }
 
 .SectionItem p:nth-child(1) {
-    font-weight: 700;
-    font-size: 34px;
-    margin: 0;
+  font-weight: 700;
+  font-size: 34px;
+  margin: 0;
 }
 
 .SectionLink {
-    font-size: 24px;
-    font-weight: 500;
-    text-decoration: none;
-    line-height: 1.5;
-    padding-left: 13px;
-    margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.5;
+  padding-left: 13px;
+  margin: 0;
 }
 
 .ActiveLink {
-    font-weight: 700;
-    color: #056082;
+  font-weight: 700;
+  color: #056082;
 }
 
 /* Se modifica el padding del contenido para mantener el contenido centrado */
 
 @media (max-width: 1052px) {
-    .SectionContainer {
-        padding: 100px 10%;
-    }
+  .SectionContainer {
+    padding: 100px 10%;
+  }
 }
 
-
 @media (max-width: 620px) {
-    .SectionContainer {
-        padding: 100px 5%;
-    }
+  .SectionContainer {
+    padding: 100px 5%;
+  }
 
-    .SectionContainer h2 {
-        font-size: 32px;
-    }
+  .SectionContainer h2 {
+    font-size: 32px;
+  }
 
-    .SectionLink {
-        font-size: 18px;
-    }
+  .SectionLink {
+    font-size: 18px;
+  }
 
-    .ActiveLink {
-        font-size: 18px;
-    }
+  .ActiveLink {
+    font-size: 18px;
+  }
 
-    .SectionItem a:nth-child(1) {
-        font-weight: 700;
-        font-size: 34px;
-    }
+  .SectionItem a:nth-child(1) {
+    font-weight: 700;
+    font-size: 34px;
+  }
 }

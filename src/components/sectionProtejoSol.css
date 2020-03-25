@@ -1,64 +1,64 @@
 .ProtejoSol {
-    background-color: #D6F1F6;
+  background-color: #d6f1f6;
 }
 
 .ProtejoSolContainer {
-    padding: 100px 0 0 0;
+  padding: 100px 0 0 0;
 }
 
 .ProtejoSolHeader {
-    padding: 0 17%;
-    padding-bottom: 52px;
+  padding: 0 17%;
+  padding-bottom: 52px;
 }
 
 .ProtejoSolBody {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .ProtejoSolItems {
-    margin: 0 7%;
+  margin: 0 7%;
 }
 
 .ProtejoSolFooter {
-    padding: 0 15%;
-    margin-top: 50px;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
+  padding: 0 15%;
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
 }
 
 .ProtejoSolInfo {
-    color: #056082;
+  color: #056082;
 }
 
 /* Estilo de los contenidos */
 .ProtejoSolScroll {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    justify-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
 }
 
 .ProtejoSolScrollIndicator {
-    display: none;
+  display: none;
 }
 
-@media(max-width: 620px) {
-    .ProtejoSolScroll {
-        grid-template-columns: 70px 1fr 70px;
-    }
-    .ProtejoSolScrollIndicator {
-        display: block;
-        width: 100%;
-        height: 50px;
-    }
-    .ProtejoSolFooter {
-        margin-top: 20px;
-    }
+@media (max-width: 620px) {
+  .ProtejoSolScroll {
+    grid-template-columns: 70px 1fr 70px;
+  }
+  .ProtejoSolScrollIndicator {
+    display: block;
+    width: 100%;
+    height: 50px;
+  }
+  .ProtejoSolFooter {
+    margin-top: 20px;
+  }
 
-    .ProtejoSolItems {
-        margin: 0;
-    }
+  .ProtejoSolItems {
+    margin: 0;
+  }
 }

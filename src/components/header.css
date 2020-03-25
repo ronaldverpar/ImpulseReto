@@ -1,116 +1,116 @@
 header {
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    padding: 0;
-    z-index: 10;
-    background: white;   
-    box-shadow: 0 0 5px rgba(0, 0, 0, .16);
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  z-index: 10;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .HeaderGroup {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .HeaderLogos {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: left;
 }
 
 .HeaderGroup img {
-    width: 100px;
-    margin-left: 80px;
+  width: 100px;
+  margin-left: 80px;
 }
 
 .Separator {
-    width: 2px;
-    height: 48px;
-    background-color: #056082;
-    display: none;
+  width: 2px;
+  height: 48px;
+  background-color: #056082;
+  display: none;
 }
 
 .ScreenStatus {
-    display: none;
+  display: none;
 }
 
 .HeaderButton {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: right;
-    padding-right: 70px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: right;
+  padding-right: 70px;
 }
 
 /* si el tamanio de la pantalla es más pequenia cambiar estilo */
 .HeaderScroll {
-    background: rgba(255, 255, 255, .8);
-    backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
 }
 
 @media (max-width: 712px) {
-    .HeaderButton {
-        display: none;
-    }
+  .HeaderButton {
+    display: none;
+  }
 }
 
 @media (max-width: 620px) {
-    header {
-        height: 70px;
-    }
-    .HeaderGroup {
-        margin-top: 8px;
-        grid-template-columns: 1fr 2fr;
-    }
+  header {
+    height: 70px;
+  }
+  .HeaderGroup {
+    margin-top: 8px;
+    grid-template-columns: 1fr 2fr;
+  }
 
-    .HeaderGroup img {
-        width: 60px;
-        margin-left: 30px;
-    }
+  .HeaderGroup img {
+    width: 60px;
+    margin-left: 30px;
+  }
 
-    .HeaderLogos {
-        grid-template-columns: 1fr;
-        justify-items: left;
-    }
+  .HeaderLogos {
+    grid-template-columns: 1fr;
+    justify-items: left;
+  }
 
-    .Separator {
-        display: none;
-    }
+  .Separator {
+    display: none;
+  }
 
-    .ScreenStatus {
-        display: none;
-    }
+  .ScreenStatus {
+    display: none;
+  }
 }
 
 /* Cuando se realizar scroll los estilos son cambiados */
 @media (min-width: 520px) {
-    .HeaderScroll .HeaderGroup {
-        height: 100px;
-    }
+  .HeaderScroll .HeaderGroup {
+    height: 100px;
+  }
 
-    .HeaderScroll {
-        height: 110px;
-    }
-    
-    .HeaderScroll .HeaderLogos{
-        margin-left: 80px;
-        grid-template-columns: 150px 60px 100px;
-        align-items: center;
-        justify-items: center;
-    }
-    
-    .HeaderScroll .HeaderGroup img {
-        display: none;
-    }
-    
-    .HeaderScroll .ScreenStatus {
-        display: inline;
-    }
-    
-    .HeaderScroll .Separator {
-        display: inline;
-    }
+  .HeaderScroll {
+    height: 110px;
+  }
+
+  .HeaderScroll .HeaderLogos {
+    margin-left: 80px;
+    grid-template-columns: 150px 60px 100px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .HeaderScroll .HeaderGroup img {
+    display: none;
+  }
+
+  .HeaderScroll .ScreenStatus {
+    display: inline;
+  }
+
+  .HeaderScroll .Separator {
+    display: inline;
+  }
 }

@@ -30,14 +30,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-        <Header />
-        <main>{children}</main>
-        <footer>
-          <section className="FooterStyle">
-            <p className="FooterOwner">Oncosalud 2019 - Derechos Reservados</p>
-            <p className="FooterInfo">Desarrollo: Impulse | Inbound Marketing</p>
-          </section>
-        </footer>
+      <Header />
+      <main>{children}</main>
+      <footer>
+        <section className="FooterStyle">
+          <p className="FooterOwner">Oncosalud 2019 - Derechos Reservados</p>
+          <p className="FooterInfo">Desarrollo: Impulse | Inbound Marketing</p>
+        </section>
+      </footer>
     </>
   )
 }
